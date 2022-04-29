@@ -67,7 +67,7 @@ function App() {
         if (predictions[1][n] > 0.5) {
           const p = document.createElement("p");
           p.innerText =
-            "Pill" +
+            "Mascarilla" +
             ": " +
             Math.round(parseFloat(predictions[1][n]) * 100) +
             "%";
@@ -96,7 +96,7 @@ function App() {
           ctx.fillStyle = "red";
 
           ctx.fillText(
-            "Pill" +
+            "Mascarilla" +
               ": " +
               Math.round(parseFloat(predictions[1][n]) * 100) +
               "%",
@@ -156,7 +156,7 @@ function App() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Pill Detection
+            Deteccion Mascarilla
           </Typography>
         </Toolbar>
       </AppBar>
@@ -201,7 +201,7 @@ function App() {
                   predictionFunction();
                 }}
               >
-                Start Detect
+                Empezar
               </Button>
             }
             <Box mt={2} />{" "}
